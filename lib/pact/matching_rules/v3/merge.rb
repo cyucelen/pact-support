@@ -159,7 +159,7 @@ module Pact
           if @matching_rules.any?
             @matching_rules.each do | path, rules_hash |
               rules_hash.each do | key, value |
-                $stderr.puts "WARN: Ignoring unsupported #{key} #{value} for path #{path}" if value_present?(value)
+                $stderr.puts "WARN: TEST Ignoring unsupported #{key} #{value} for path #{path}" if value_present?(value)
               end
             end
           end
